@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hover Image Content</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .nav {
+      position:fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background-color: blanchedalmond;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      font-size: 25px;
+      z-index: 10;
+    }
+
+    .container {
+      margin-top:80px;
+      padding: 20px;
+    }
+
+    .card {
+      position: relative;
+      width: 600px;
+      border: 2px solid black;
+      border-radius: 15px;
+      margin: 20px auto;
+      background-color: #eee;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card p {
+      display: none;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .card img {
+      height: 150px;
+      width: 150px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+
+    .card:hover p {
+      display: block;
+    }
+
+    .python { background-color: cadetblue; }
+    .C { background-color: brown; }
+    .javascript { background-color: orange; }
+  </style>
+</head>
+<body>
+
+  <div class="nav">
+    <span>Python</span>
+    <span>C</span>
+    <span>JavaScript</span>
+  </div>
+
+  <div class="container">
+
+    <div class="card python">
+      <p>Python is a high-level, interpreted programming language known for its simplicity and readability. 
+        It's widely used for web development, data analysis, artificial intelligence, automation, and more.</p>
+      <img src="./logo1.png" alt="Python">
+    </div>
+
+    <div class="card C">
+      <p>C is a general-purpose, procedural programming language developed in the early 1970s. 
+        It's known for speed and control, widely used in system and embedded programming.</p>
+      <img src="./c image2.jpeg" alt="C Language">
+    </div>
+
+    <div class="card javascript">
+      <p>JavaScript is used to make web pages interactive. It powers buttons, animations, scrolling effects, and more.</p>
+      <img src="./js1.webp" alt="JavaScript">
+    </div>
+
+  </div>
+</body>
+</html>
